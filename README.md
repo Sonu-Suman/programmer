@@ -6,3 +6,5 @@
 
 3). index.html is html code for making a website
 
+4). idex.css is some code css file and also this is part of index.html code
+
