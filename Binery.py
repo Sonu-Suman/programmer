@@ -1,4 +1,4 @@
-this = "Surendra singh bank"
+this = " l.S. Bank"
 name = input("Enter your name.\nWho is using this card please enter your name:  ")
 
 print(f'Welcome to {this} bank A.T.M')
