@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello, user!</title>
+    <style>
+        @media (min-width: 600px) {
+            body{
+                background-color: rgb(148, 101, 142);
+            }
+        }
+
+        @media (max-width: 599px) {
+            body{
+                background-color: rgb(160, 204, 204);
+            }
+        }
+        #container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        #container > div {
+            background-color: springgreen;
+            font-size: 12px;
+            margin: 15px;
+            padding: 20px;
+            width: 150px;
+        }
+        h2 {
+            color: rgb(252, 149, 15);
+            text-align: center;
+            font-weight: bold;
+        }
+        #foo {
+            color: green;
+        }
+        div {
+            border: 2px solid blue;
+            background-color: pink;
+            width: 450px;
+            height: 50px;
+            padding: 20px;
+            margin: 10px;
+            font-family: Arial, sans-serif;
+            font-size: 25px;
+            font-weight: bold;
+        }
+        table {
+            border: 2px solid orange;
+            border-collapse: collapse;
+        }
+        td, th {
+            border: 2px solid black;
+            padding: 6px;
+        }
+        ul > li {
+            color: blue;
+            font-weight: bold;
+        }
+        a {
+            color: red;
+        }
+        a[href="http://facebook.com"] {
+            color: blue;
+        }
+        button {
+            width: 150px;
+            height: 30px;
+            font-size: 12px;
+            background-color: rgb(83, 19, 49);
+            color: orange;
+            font-weight: bold;
+        }
+        button:hover {
+            background-color: red;
+        }
+    </style>
+    <link rel="stylesheet" href="idex.css">
+</head>
+<body>
+    <h1 style="color: rgba(117, 52, 8, 0.884); text-align: center">Welcome to my web page!</h1>
+    <h2>JAI SHREE RADHE KRISHN</h2>
+    <h2 id="foo">Hello visiters</h2>
+    <h3>Hare Krishna, Be happy</h3>
+    <img src="sonu.jpg" alt="Sonu" width=150>
+    <div>
+        Welcome in this amazing universe!
+    </div>
+    <ul>An unordered List:-
+        <li>one Item</li>
+        <li>second Item</li>
+        <li>third Item</li>
+    </ul>
+    An ordered list:-
+    <Ol>
+        <li>list item First:</li>
+        <li>list item Second:</li>
+        <ul>
+            <li>sublist item one</li>
+            <li>sublist item two</li>
+        </ul>
+        <li>list item Third:</li>
+    </Ol>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Company</th>
+                <th>Money</th>
+                <th>Power</th>
+                <th>popular(Tweeter)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Jeff Bezos</td>
+                <td>Amazon</td>
+                <td>185 billion dollor</td>
+                <td>1 st position</td>
+                <td>3.2 million follower</td>
+            </tr>
+            <tr>
+                <td>Bill gates</td>
+                <td>Microsoft</td>
+                <td>128 Billion dollor</td>
+                <td>3 rd position</td>
+                <td>49 million follower</td>
+            </tr>
+            <tr>
+                <td>Mark zuckerberg</td>
+                <td>Facebook</td>
+                <td>89 Billion dollor</td>
+                <td>5 th position</td>
+                <td>6 million follower</td>
+            </tr>
+            <tr>
+                <td>Elon musk</td>
+                <td>Spacex, Tesla, 
+                    Neuralink</td>
+                <td>155 Billion dollor</td>
+                <td>2 nd position</td>
+                <td>40 million follower</td>
+            </tr>
+        </tbody>
+    </table>
+    <form>
+        <div>
+            <input type="text" placeholder="Full Name" name="name">
+            <input type="text" placeholder="Email_id" Email_id="email_id">
+            <input type="Mobile" placeholder="Mobile_no." Mobile="mobile">
+            <input type="password" placeholder="password" password="password">
+        </div>
+
+        <div>
+            Favorite language?: 
+            <input name="language" type="radio" value="python"> python
+            <input name="language" type="radio" value="java"> Java
+            <input name="language" type="radio" value="javascript"> Javascript
+            <input name="language" type="radio" value="c++"> C++
+        </div>
+
+        <div>
+            <input name="country" list="countries" placeholder="Country">
+            <datalist id="countries">
+                <option value="Aairland">
+                <option value="Aairland">
+                <option value="Aairland">
+                <option value="Afghanistan">
+                <option value="Albania">
+                <option value="Aairland">
+                <option value="Algeria">
+                <option value="Aairland">
+                <option value="Aairland">
+                <option value="Andorra">
+                <option value="Angola">
+                <option value="Argentina">
+                <option value="Armenia">
+                <option value="Australia">
+                <option value="Austeria">
+                <option value="Afirica">
+                <option value="Bhutan">
+                <option value="Baali">
+                <option value="Brazile">
+                <option value="Bangladesh">
+                <option value="Cambodia">
+                <option value="Canada">
+                <option value="Japan">
+                <option value="Germany">
+                <option value="China">
+                <option value="Hong kong">
+                <option value="Taiwan">
+                <option value="France">
+                <option value="Italy">
+                <option value="Russia">
+                <option value="India">
+                <option value="Indonesia">
+                <option value="Shri Lanka">
+                <option value="Switerzerland">
+                <option value="Spain">
+                <option value="Saudi arebia">
+                <option value="Nepal">
+                <option value="Turky">
+                <option value="Pakistan">
+                <option value="Malesiya">
+                <option value="New zeeland">
+                <option value="United kingdom">
+                <option value="United state">
+                <option value="United Arab Amirat">
+                <option value="Verginia">
+                <option value="Zimababe">
+            </datalist>
+            <input type="submit">
+        </div>
+        <div class="alert alert-danger" role="alert">
+            A primary danger alert!
+          </div>
+    </form><ul>
+        <li><a href="mailto: sumankumar86028@gmail.com">Click for Email</a></li>
+        <li><a href="http://google.com"><button>Click here(Google)</button></a></li>
+        <li><a href="http://facebook.com"><button>Click here(Facebook)</button></a></li>
+        <li><a href="http://Amazon.com">Amazon</a></li>
+        <li><a href="http://instagram.com">Instagram</a></li>
+    </ul>
+</body>
+</html>
