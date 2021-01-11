@@ -18,11 +18,11 @@ def Play():
         print("DRAW")
     elif ((player_1 == 1) == (player_2 == 3)) or ((player_1 == 2) == (player_2 == 1)) or ((player_1 == 3) ==(player_2 == 2)):
         player2_Score += 1
-        print(f'{Player_2} Score:- {player2_Score}')
+        print(f'{Player_2} Score: {player2_Score}')
         print(f'{Player_2} wins!')
     else:
         player1_Score += 1
-        print(f'{Player_1} Score:- {player1_Score}')
+        print(f'{Player_1} Score: {player1_Score}')
         print(f'{Player_1} wins!')
 
 
