@@ -7,7 +7,7 @@ from pygame import mixer
 # THIS IS CHRISTMAS WISHING GREETING 
 
 mixer.init()
-mixer.music.load('JONY_-_Love_your_voice(256k).mp3')
+mixer.music.load('song-file_name.mp3')
 mixer.music.play()
 
 turtle.title("CHRISTMAS CELEBRATION")
