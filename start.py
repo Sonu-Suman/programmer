@@ -6,7 +6,7 @@ from pygame import mixer
 # New Year Celebration code
 
 mixer.init()
-mixer.music.load('JONY_-_Love_your_voice(256k).mp3')
+mixer.music.load('song-file_name.mp3')
 mixer.music.play()
 
 turtle.title("Happy new year")
