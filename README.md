@@ -13,5 +13,6 @@
 6). game.py is Rock, Paper and Scissors game code
 
 7). Chris.py is Christmas celebration code witten by me...
+    * 1).  new line added for print statement 'Happy Christmas 2020'
 
 8). Emoji.py is a basic emoji code file
