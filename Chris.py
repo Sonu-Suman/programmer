@@ -4,6 +4,9 @@ import random
 from pygame import mixer
 
 
+colors = ["red", "Blue", "orange", "Green"]
+
+
 # THIS IS CHRISTMAS WISHING GREETING 
 
 mixer.init()
@@ -140,5 +143,10 @@ for i in range(18):
     turtle.setheading(270)
     turtle.forward(25)
 
+turtle.penup()
+turtle.goto(-220, -250)
+turtle.pendown()
+turtle.pencolor(random.choice(colors))
+turtle.write("HAPPY CHRISTMAS\n           2020", move=False, align="left", font=("italic", 48, "normal"))
 mixer.music.stop()
 turtle.done()
