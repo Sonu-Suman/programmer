@@ -16,3 +16,5 @@
     * 1).  new line added for print statement 'Happy Christmas 2020'
 
 8). Emoji.py is a basic emoji code file
+
+9). pass.py is random password generetor code
