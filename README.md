@@ -18,3 +18,8 @@
 8). Emoji.py is a basic emoji code file
 
 9). pass.py is random password generetor code
+
+10). covi.py is covid data visulization
+          *vico.py -> vi: visulizaton
+                      co: Covid-19
+
