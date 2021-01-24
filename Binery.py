@@ -1,9 +1,9 @@
 # <======This is the first type of A.T.M. code=======>
 
-this = " l.S. Bank"
+bank = " l.S. Bank"
 name = input("Enter your name.\nWho is using this card please enter your name:  ")
 
-print(f'Welcome to {this} bank A.T.M')
+print(f'Welcome to {bank} bank A.T.M')
 restart = 'y'
 chance = 3
 balance = 100000000000
@@ -12,7 +12,7 @@ while chance >= 0:
     pin = int(input("Please Entered you 4 Digit input: "))
     if pin == 4598:
         print(f'Welcome {name}')
-        print(f'your entered pin Correctly, Thank you for using {this} ATM')
+        print(f'your entered pin Correctly, Thank you for using {bank} ATM')
         while restart not in ('n', 'NO', 'N', 'no'):
             print("Please Press 1 for your balance..")
             print("Please Press 2 for withdrawal your entered money...")
@@ -30,7 +30,7 @@ while chance >= 0:
                 withdrawal = float(input("How Much Would you like to withdrawal? 100, 500, 1000, 5000, 10000,"
                                          " 50000, for other enter 1: "))
                 if withdrawal in [100, 500, 1000, 5000, 10000, 50000]:
-                    balance = balance - withdrawal
+                    balance -= withdrawal
                     restart = input(f'\n Your Balance is now ${balance}\nWhat would you like to go back: ')
                     if restart in ('n', 'NO', 'N', 'no'):
                         print("Thank you!")
@@ -58,7 +58,7 @@ while chance >= 0:
                 restart = 'y'
     elif pin != 4598:
         print("This is incorrect pin....")
-        chance = chance - 1
+        chance -= 1
         if chance == 0:
             print("\nNo more tries")
     break
