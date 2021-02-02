@@ -8,7 +8,6 @@ colors = ["red", "Blue", "orange", "Green"]
 
 
 # THIS IS CHRISTMAS WISHING GREETING 
-
 mixer.init()
 mixer.music.load('song-file_name.mp3')
 mixer.music.play()
