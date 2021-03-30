@@ -3,7 +3,7 @@ import random
 name = input("What's your name: ")
 
 print(f'Hey, {name}! This is guessing game ')
-print("Do you play this game")
+print("Do you want to play this game")
 
 answer = input("Enter you answer(y/n)?: ")
 
