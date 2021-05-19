@@ -5,7 +5,7 @@
 
 lst = []
 i = 0
-"""
+
 while i < 3:
     num = int(input("Enter your number for list: "))
     lst.append(num)
@@ -23,7 +23,7 @@ else:
         print(lst[1], " is the biggest number in this list")
     else:
         print(lst[2], " is the biggest number in the list")
-"""
+
 
 # This is also applicable for big array
 
