@@ -98,24 +98,17 @@ def button_equal():
 
 button_1 = Button(root, text='1', padx=40, pady=20, relief=RIDGE, command=lambda: button_click(1), bg='pink', fg='red')
 button_2 = Button(root, text='2', padx=40, pady=20, relief=RIDGE, command=lambda: button_click(2), bg='pink', fg='blue')
-button_3 = Button(root, text='3', padx=40, pady=20, relief=RIDGE, command=lambda: button_click(3), bg='pink',
-                  fg='green')
-button_4 = Button(root, text='4', padx=40, pady=20, relief=RIDGE, command=lambda: button_click(4), bg='pink',
-                  fg='black')
+button_3 = Button(root, text='3', padx=40, pady=20, relief=RIDGE, command=lambda: button_click(3), bg='pink', fg='green')
+button_4 = Button(root, text='4', padx=40, pady=20, relief=RIDGE, command=lambda: button_click(4), bg='pink', fg='black')
 button_5 = Button(root, text='5', padx=40, pady=20, relief=RIDGE, command=lambda: button_click(5), bg='pink', fg='gray')
-button_6 = Button(root, text='6', padx=40, pady=20, relief=RIDGE, command=lambda: button_click(6), bg='pink',
-                  fg='light blue')
+button_6 = Button(root, text='6', padx=40, pady=20, relief=RIDGE, command=lambda: button_click(6), bg='pink', fg='light blue')
 button_7 = Button(root, text='7', padx=40, pady=20, relief=RIDGE, command=lambda: button_click(7), bg='pink', fg='red')
-button_8 = Button(root, text='8', padx=40, pady=20, relief=RIDGE, command=lambda: button_click(8), bg='pink',
-                  fg='orange')
-button_9 = Button(root, text='9', padx=40, pady=20, relief=RIDGE, command=lambda: button_click(9), bg='pink',
-                  fg='black')
+button_8 = Button(root, text='8', padx=40, pady=20, relief=RIDGE, command=lambda: button_click(8), bg='pink', fg='orange')
+button_9 = Button(root, text='9', padx=40, pady=20, relief=RIDGE, command=lambda: button_click(9), bg='pink', fg='black')
 button_0 = Button(root, text='0', padx=40, pady=20, relief=RIDGE, command=lambda: button_click(0), bg='pink', fg='gray')
 
-button_equal = Button(root, text='=', padx=85, pady=20, command=button_equal, bg='orange', relief=RIDGE, borderwidth=3,
-                      fg='blue')
-button_clear = Button(root, text='Clear', padx=75, pady=20, command=button_clean, bg='yellow', relief=RIDGE,
-                      borderwidth=3, fg='red')
+button_equal = Button(root, text='=', padx=85, pady=20, command=button_equal, bg='orange', relief=RIDGE, borderwidth=3, fg='blue')
+button_clear = Button(root, text='Clear', padx=75, pady=20, command=button_clean, bg='yellow', relief=RIDGE, borderwidth=3, fg='red')
 
 button_add = Button(root, text='+', padx=39, pady=20, command=button_sum, bg='blue', relief=RIDGE, borderwidth=3)
 button_subtract = Button(root, text='--', padx=37, pady=20, command=button_sub, bg='blue', relief=RIDGE, borderwidth=3)
@@ -123,11 +116,9 @@ button_multiply = Button(root, text='X', padx=40, pady=20, command=button_mult, 
 button_divide = Button(root, text='/', padx=40, pady=20, command=button_div, bg='blue', relief=RIDGE, borderwidth=3)
 
 # Currency converter
-button_squar = Button(root, text="^", padx=39, pady=20, command=button_square, bg='light blue', relief=RIDGE,
-                      borderwidth=4)
+button_squar = Button(root, text="^", padx=39, pady=20, command=button_square, bg='light blue', relief=RIDGE, borderwidth=4)
 # button_pound = Button(root, text="€", padx=40, pady=20, command=button_pou)
-button_percentage = Button(root, text='%', padx=38, pady=20, command=button_per, bg='light blue', relief=RIDGE,
-                           borderwidth=4)
+button_percentage = Button(root, text='%', padx=38, pady=20, command=button_per, bg='light blue', relief=RIDGE, borderwidth=4)
 
 # put button on the screen
 button_1.grid(row=3, column=0)
