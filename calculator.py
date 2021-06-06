@@ -3,11 +3,12 @@ from tkinter import *
 root = Tk()
 root.title("CALCULATOR")
 root.geometry('387x403')
-root.maxsize(387, 403)
-root.minsize(387, 403)
+root.maxsize(483, 600)
+root.minsize(483, 600)
 
-e = Entry(root, width=40, borderwidth=5, fg='red', bg='gray')
-e.grid(row=0, column=0, columnspan=4, padx=20, pady=20)
+e = Entry(root, width=24, fg='red', bg='lightgray')
+e.config(font=('arial', 24, 'bold'))
+e.grid(row=0, column=0, columnspan=4, padx=20, pady=38)
 
 global f_num
 
@@ -79,46 +80,70 @@ def button_equal():
 
     if math == 'addition':
         e.insert(0, f_num + int(second_number))
+        e.config(fg="blue")
 
     if math == 'subtraction':
         e.insert(0, f_num - int(second_number))
+        e.config(fg="yellow")
 
     if math == 'multiplication':
         e.insert(0, f_num * int(second_number))
+        e.config(fg="green")
 
     if math == 'division':
-        e.insert(0, f_num / int(second_number))
+        e.insert(0, '%.5f' % (f_num / int(second_number)))
+        e.config(fg="orange")
 
     if math == 'square':
         e.insert(0, f_num ** int(second_number))
+        e.config(fg="black")
 
     if math == 'percentage':
-        e.insert(0, str((int(second_number) * 100) / f_num) + '%')
+        e.insert(0, str('%.5f' % (int(second_number) * 100) / f_num) + '%')
+        e.config(fg="orange")
 
 
-button_1 = Button(root, text='1', padx=40, pady=20, relief=RIDGE, command=lambda: button_click(1), bg='pink', fg='red')
-button_2 = Button(root, text='2', padx=40, pady=20, relief=RIDGE, command=lambda: button_click(2), bg='pink', fg='blue')
-button_3 = Button(root, text='3', padx=40, pady=20, relief=RIDGE, command=lambda: button_click(3), bg='pink', fg='green')
-button_4 = Button(root, text='4', padx=40, pady=20, relief=RIDGE, command=lambda: button_click(4), bg='pink', fg='black')
-button_5 = Button(root, text='5', padx=40, pady=20, relief=RIDGE, command=lambda: button_click(5), bg='pink', fg='gray')
-button_6 = Button(root, text='6', padx=40, pady=20, relief=RIDGE, command=lambda: button_click(6), bg='pink', fg='light blue')
-button_7 = Button(root, text='7', padx=40, pady=20, relief=RIDGE, command=lambda: button_click(7), bg='pink', fg='red')
-button_8 = Button(root, text='8', padx=40, pady=20, relief=RIDGE, command=lambda: button_click(8), bg='pink', fg='orange')
-button_9 = Button(root, text='9', padx=40, pady=20, relief=RIDGE, command=lambda: button_click(9), bg='pink', fg='black')
-button_0 = Button(root, text='0', padx=40, pady=20, relief=RIDGE, command=lambda: button_click(0), bg='pink', fg='gray')
+button_1 = Button(root, text='1', padx=40, pady=20, command=lambda: button_click(1), bg='pink', fg='red')
+button_1.config(font=('arial', 20, 'bold'))
+button_2 = Button(root, text='2', padx=40, pady=20, command=lambda: button_click(2), bg='pink', fg='blue')
+button_2.config(font=('arial', 20, 'bold'))
+button_3 = Button(root, text='3', padx=40, pady=20, command=lambda: button_click(3), bg='pink', fg='green')
+button_3.config(font=('arial', 20, 'bold'))
+button_4 = Button(root, text='4', padx=40, pady=20, command=lambda: button_click(4), bg='pink', fg='black')
+button_4.config(font=('arial', 20, 'bold'))
+button_5 = Button(root, text='5', padx=40, pady=20, command=lambda: button_click(5), bg='pink', fg='gray')
+button_5.config(font=('arial', 20, 'bold'))
+button_6 = Button(root, text='6', padx=40, pady=20, command=lambda: button_click(6), bg='pink', fg='light blue')
+button_6.config(font=('arial', 20, 'bold'))
+button_7 = Button(root, text='7', padx=40, pady=20, command=lambda: button_click(7), bg='pink', fg='red')
+button_7.config(font=('arial', 20, 'bold'))
+button_8 = Button(root, text='8', padx=40, pady=20, command=lambda: button_click(8), bg='pink', fg='orange')
+button_8.config(font=('arial', 20, 'bold'))
+button_9 = Button(root, text='9', padx=40, pady=20, command=lambda: button_click(9), bg='pink', fg='black')
+button_9.config(font=('arial', 20, 'bold'))
+button_0 = Button(root, text='0', padx=40, pady=20, command=lambda: button_click(0), bg='pink', fg='gray')
+button_0.config(font=('arial', 20, 'bold'))
 
-button_equal = Button(root, text='=', padx=85, pady=20, command=button_equal, bg='orange', relief=RIDGE, borderwidth=3, fg='blue')
-button_clear = Button(root, text='Clear', padx=75, pady=20, command=button_clean, bg='yellow', relief=RIDGE, borderwidth=3, fg='red')
+button_equal = Button(root, text='=', padx=98, pady=20, command=button_equal, bg='orange', relief=RIDGE, borderwidth=3, fg='blue')
+button_equal.config(font=('arial', 20, 'bold'))
+button_clear = Button(root, text='Clear', padx=72, pady=20, command=button_clean, bg='yellow', relief=RIDGE, borderwidth=3, fg='red')
+button_clear.config(font=('arial', 20, 'bold'))
 
 button_add = Button(root, text='+', padx=39, pady=20, command=button_sum, bg='blue', relief=RIDGE, borderwidth=3)
-button_subtract = Button(root, text='--', padx=37, pady=20, command=button_sub, bg='blue', relief=RIDGE, borderwidth=3)
-button_multiply = Button(root, text='X', padx=40, pady=20, command=button_mult, bg='blue', relief=RIDGE, borderwidth=3)
-button_divide = Button(root, text='/', padx=40, pady=20, command=button_div, bg='blue', relief=RIDGE, borderwidth=3)
+button_add.config(font=('arial', 20, 'bold'))
+button_subtract = Button(root, text='--', padx=39, pady=20, command=button_sub, bg='blue', relief=RIDGE, borderwidth=3)
+button_subtract.config(font=('arial', 20, 'bold'))
+button_multiply = Button(root, text='X', padx=38, pady=20, command=button_mult, bg='blue', relief=RIDGE, borderwidth=3)
+button_multiply.config(font=('arial', 20, 'bold'))
+button_divide = Button(root, text='/', padx=44, pady=20, command=button_div, bg='blue', relief=RIDGE, borderwidth=3)
+button_divide.config(font=('arial', 20, 'bold'))
 
 # Currency converter
 button_squar = Button(root, text="^", padx=39, pady=20, command=button_square, bg='light blue', relief=RIDGE, borderwidth=4)
+button_squar.config(font=('arial', 20, 'bold'))
 # button_pound = Button(root, text="€", padx=40, pady=20, command=button_pou)
-button_percentage = Button(root, text='%', padx=38, pady=20, command=button_per, bg='light blue', relief=RIDGE, borderwidth=4)
+button_percentage = Button(root, text='%', padx=34, pady=20, command=button_per, bg='light blue', relief=RIDGE, borderwidth=4)
+button_percentage.config(font=('arial', 20, 'bold'))
 
 # put button on the screen
 button_1.grid(row=3, column=0)
