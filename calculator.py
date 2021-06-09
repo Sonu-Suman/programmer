@@ -2,7 +2,6 @@ from tkinter import *
 
 root = Tk()
 root.title("CALCULATOR")
-root.geometry('387x403')
 root.maxsize(483, 600)
 root.minsize(483, 600)
 
@@ -71,7 +70,7 @@ def button_square():
     math = 'square'
     f_num = int(first_number)
     e.delete(0, END)
-    pass
+
 
 
 def button_equal():
@@ -99,7 +98,7 @@ def button_equal():
         e.config(fg="black")
 
     if math == 'percentage':
-        e.insert(0, str('%.5f' % (int(second_number) * 100) / f_num) + '%')
+        e.insert(0, str((int(second_number) * 100) / f_num) + '%')
         e.config(fg="orange")
 
 
