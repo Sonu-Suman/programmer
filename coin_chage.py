@@ -65,6 +65,28 @@ n = 4
 print(count(arr, m, n))
 
 
+# --------------------------------------------------------
+# This is third type of solution
+
+def count(s, m, n):
+	table = [0 for k in range(n+1)]
+
+	table[0] = 1
+
+	for i in range(0, m):
+		for j in range(s[i], n+1):
+			table[j] += table[j-s[i]]
+
+	return table[n]
+
+
+s = [1, 2, 5, 10, 20, 50, 100, 1000]
+m = len(s)
+n = 70
+print(count(s, m, n))
+
+
+
 # This is for finding minimum number changing of coins.--------------------------------------
 
 def count(n, s):
