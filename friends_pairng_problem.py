@@ -93,4 +93,3 @@ def countFriendsPairings(n):
 n = 4;
 print(countFriendsPairings(n));
 
-# This code contributed by Rajput-Ji
