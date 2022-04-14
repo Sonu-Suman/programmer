@@ -1,4 +1,4 @@
-# This solution based upon Dynamic Programming data structure method
+# This solution based upon data structure method
 
 # 1).
 class Solution:

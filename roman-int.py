@@ -9,10 +9,10 @@ class Solution:
         ll = []
         for k in range(len(s)):
             if k<(l1-1):
-                    if d[s[k]]<d[s[k+1]]:
-                        a +=  d[s[k+1]]-d[s[k]]
-                        ll.append(k)
-                        ll.append(k+1)
+                if d[s[k]]<d[s[k+1]]:
+                    a +=  d[s[k+1]]-d[s[k]]
+                    ll.append(k)
+                    ll.append(k+1)
             
             for i, j in d.items():
                 if k not in ll:

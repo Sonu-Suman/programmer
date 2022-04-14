@@ -10,17 +10,17 @@ So output should be 4. For N = 10 and S = {2, 5, 3, 6}, there are five solutions
 #----------------------------------------------------------------------------------------------------
 # This is the Recursive methode for finding total number.
 
-def Count(s, m, n):
-	if n==0:
+def Count(coins_array, Coins_array_len, changable_coin):
+	if changable_coin==0:
 		return 1
 
-	if n<0:
+	if changable_coin<0:
 		return 0
 
-	if m<=0 and n>0:
+	if Coins_array_len<=0 and changable_coin>0:
 		return 0
 
-	return Count(s, m-1, n)+Count(s, m, n-s[m-1])
+	return Count(coins_array, Coins_array_len-1, changable_coin)+Count(coins_array, Coins_array_len, changable_coin-coins_array[Coins_array_len-1])
 
 
 s = [1, 2, 5, 10, 20, 50, 100, 1000]
@@ -69,7 +69,7 @@ print(count(arr, m, n))
 # This is third type of solution
 
 def count(s, m, n):
-	table = [0 for k in range(n+1)]
+	table = [0] * (n+1)
 
 	table[0] = 1
 
@@ -100,7 +100,7 @@ def count(n, s):
 	j = 0
 	q = []
 
-	while 0<n:
+	while j<n:
 		n = n%max(d)
 		j += 1
 		q.append(max(d))
